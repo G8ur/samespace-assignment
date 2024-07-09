@@ -13,6 +13,9 @@ const TABS = {
   top_tracks: "top_tracks",
 };
 
+
+
+
 const Homepage = () => {
   const [songsData, setSongsData] = useState([]);
   const [loading, setLoading] = useState({});
@@ -125,7 +128,8 @@ const Homepage = () => {
             .map((item, index) => {
               return (
                 <ListItem
-                  icon={item.cover?.id}
+                  id={item.id}
+                  icon={item.cover}
                   artist={item.artist}
                   name={item.name}
                   data={item}
@@ -165,4 +169,5 @@ const Homepage = () => {
   );
 };
 export default Homepage;
+
 
