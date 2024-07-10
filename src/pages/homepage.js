@@ -193,8 +193,8 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import logo from "../assets/Logo.svg";
 import profile from "../assets/Profile.svg";
-import axios from "axios"; // Import Axios
-// import ListItem from "../components/list";
+import axios from "axios"; 
+
 
 const TABS = {
   for_you: "for_you",
@@ -244,6 +244,10 @@ const Homepage = () => {
     }
   };
 
+
+
+
+
   const filterSongs = () => {
     if (activeTab === TABS.top_tracks) {
       const topTracks = songsData.filter(song => song.top_track === true);
@@ -252,6 +256,8 @@ const Homepage = () => {
       setFilteredData(songsData);
     }
   };
+
+
 
   const handleNext = (data) => {
     const currentIndex = filteredData.findIndex(song => song.id === data.id);
