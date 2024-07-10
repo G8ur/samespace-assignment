@@ -4,9 +4,6 @@ import './index.css';
 import './assets/global.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import axios from 'axios';
-
 
 
 
